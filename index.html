@@ -3,96 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
         <title>Portfolio Dongmo Sopjio Flore</title>
     </head>
     <body>
         <header>
-            <h1>Dongmo Sopjio Flore</h1>
+            <div class="nav-logo">DSF</div>
             <nav>
-                <ul>
+                <ul class="nav-links" id="navLinks">
                     <li>
-                        <a href="">Accueil</a>
-                        Accueil
+                        <a href="#about">À propos</a>
                     </li>
                     <li>
-                        <a href="">A propos de moi</a>
+                        <a href="#competences">Compétences</a>
                     </li>
                     <li>
-                        <a href="">Mes compétences</a>
+                        <a href="#experiences">Expériences</a>
                     </li>
                     <li>
-                        <a href="">Experiences</a>
+                        <a href="#formation">Formation</a>
                     </li>
                     <li>
-                        <a href="">Formations</a>
+                        <a href="#projets">Projets</a>
                     </li>
                     <li>
-                        <a href="">Projets</a>
-                    </li>
-                    <li>
-                        <a href="">Recherche Scientifique</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <div>
+            <section id="hero">
+                <div class="hero-inner">
                     <div>
-                        <h2>
+                        <h1 class="hero-name">
                             Dongmo Sopjio
                             <em>Flore</em>
-                        </h2>
-                        <Span>Développeuse fullstack / Teteuse QA</Span>
-                        <p>
+                        </h1>
+                        <Span class="hero-title">Développeuse fullstack / Teteuse QA</Span>
+                        <p class="hero-desc">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aut a dolores at 
                         placeat iste officia quos, quae, magnam ipsa laudantium totam minus eius sunt
                         pariatur illo enim rem eum.
                         </p>
-                        <div>
-                            <a href="">Me contacter</a>
-                            <a href=""> Voir mes projet</a>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">Me contacter</a>
+                            <a href="#projets" class="btn btn-outline"> Voir mes projets</a>
                         </div>
                     </div>
-                    <img src="/images/Flore.png" alt="Iimage pro de Flore">
+                    <img src="./images/flore.png" alt="Iimage pro de Flore" class="avatar-placeholder">
                 </div>
             </section>
-            <section>
-                <div>
+            <section id="stats">
+                <div class="stats-grid">
                     <div>
-                        <div>2+</div>
-                        <div>Ans d'expériences</div>
+                        <div class="stat-value">2+</div>
+                        <div class="stat-label">Ans d'expériences</div>
                     </div>
                     <div>
-                        <div>5+</div>
-                        <div>Rôles occupés</div>
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">Rôles occupés</div>
                     </div>
                     <div>
-                        <div>Master</div>
-                        <div>Niveau d'étude</div>
+                        <div class="stat-value">Master</div>
+                        <div class="stat-label">Niveau d'étude</div>
                     </div>
                     <div>
-                        <div>10+</div>
-                        <div>Technologies maitrisées</div>
+                        <div class="stat-value">10+</div>
+                        <div class="stat-label">Technologies maitrisées</div>
                     </div>
                 </div>
             </section>
-            <Section>
-                <div>
-                    <p>À propos</p>
-                    <h2>Qui suis-je ?</h2>
-                    <div>
+            <Section id="about">
+                <div class="inner">
+                    <p class="section-label">À propos</p>
+                    <h2 class="section-title">Qui suis-je ?</h2>
+                    <div class="about-grid">
                         <div>
                             <p>Diplômée d'un Master en Informatique, option Réseaux et Services Distribués à l'Université de Dschang, je navigue à l'intersection de la recherche académique et du développement logiciel concret.</p>
                             <p>Mes travaux de master portaient sur un modèle de contrôle d'accès orienté attributs basé sur la hiérarchie organisationnelle, étendant le langage XACML pour des politiques de sécurité plus expressives.</p>
                             <p>Aujourd'hui je cherche à poursuivre cette voie dans le cadre d'un doctorat, tout en continuant à livrer des logiciels fiables en tant que QA Engineer chez Koree Africa.</p>
-                            <div>
-                                <span>🇫🇷 Français</span>
-                                <span>🇬🇧 Anglais</span>
-                                <span>📍 Douala, Cameroun</span>
+                            <div class="lang-chips">
+                                <span class="chip">🇫🇷 Français</span>
+                                <span class="chip">🇬🇧 Anglais</span>
+                                <span class="chip">📍 Douala, Cameroun</span>
                             </div>
                         </div>
                         <div>
@@ -103,68 +98,250 @@
                 </div>
             </Section>
             <!-- COMPÉTENCES -->
-            <section>
-                <div>
-                    <p>Compétences</p>
-                    <h2>Mon outillage technique</h2>
-                    <div>
-                        <div>Langages &amp; Standards</div>
-                        <div>
-                            <span>JavaScript</span>
-                            <span>TypeScript</span>
-                            <span>Java</span>
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>HTML5</span>
-                            <span>CSS</span>
-                            <span>XACML</span>
-                            <span>UML</span>
-                            <span>Gherkin</span>
-                            <span>Java EE</span>
+            <section id="competences">
+                <div class="inner">
+                    <p class="section-label">Compétences</p>
+                    <h2 class="section-title">Mon outillage technique</h2>
+                    <div class="skills-group">
+                        <div class="skills-group-title">Langages &amp; Standards</div>
+                        <div class="skills-wrap">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">XACML</span>
+                            <span class="skill-tag">UML</span>
+                            <span class="skill-tag">Gherkin</span>
+                            <span class="skill-tag">Java EE</span>
                         </div>
                     </div>
-                    <div>
-                        <div>Frameworks &amp; Librairies</div>
-                        <div>
-                            <span>Angular 13</span>
-                            <span>Spring Boot</span>
-                            <span>Ionic 6</span>
-                            <span>Cucumber</span>
-                            <span>JUnit</span>
+                    <div class="skills-group">
+                        <div class="skills-group-title">Frameworks &amp; Librairies</div>
+                        <div class="skills-wrap">
+                            <span class="skill-tag">Angular 13</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Ionic 6</span>
+                            <span class="skill-tag">Cucumber</span>
+                            <span class="skill-tag">JUnit</span>
                         </div>
                     </div>
-                    <div>
-                        <div>Bases de données</div>
-                        <div>
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
+                    <div class="skills-group">
+                        <div class="skills-group-title">Bases de données</div>
+                        <div class="skills-wrap">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
                         </div>
                     </div>
-                    <div>
-                        <div>Outils &amp; DevOps</div>
-                        <div>
-                            <span>Git</span>
-                            <span>Azure DevOps</span>
-                            <span>Microsoft Teams</span>
-                            <span>IntelliJ</span>
-                            <span>Visual Studio</span>
-                            <span>draw.io</span>
-                            <span>Canva</span>
+                    <div class="skills-group">
+                        <div class="skills-group-title">Outils &amp; DevOps</div>
+                        <div class="skills-wrap">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Azure DevOps</span>
+                            <span class="skill-tag">Microsoft Teams</span>
+                            <span class="skill-tag">IntelliJ</span>
+                            <span class="skill-tag">Visual Studio</span>
+                            <span class="skill-tag">draw.io</span>
+                            <span class="skill-tag">Canva</span>
                         </div>
                     </div>
-                    <div>
-                        <div>Savoir-faire transversal</div>
-                        <div>
-                            <span>Gestion d'équipe</span>
-                            <span>Rédaction de specs</span>
-                            <span>Tests manuels &amp; automatisés</span>
-                            <span>Résolution de problèmes</span>
-                            <span>Communication parties prenantes</span>
-                            <span>Recrutement</span>
+                    <div class="skills-group">
+                        <div class="skills-group-title">Savoir-faire transversal</div>
+                        <div class="skills-wrap">
+                            <span class="skill-tag">Gestion d'équipe</span>
+                            <span class="skill-tag">Rédaction de specs</span>
+                            <span class="skill-tag">Tests manuels &amp; automatisés</span>
+                            <span class="skill-tag">Résolution de problèmes</span>
+                            <span class="skill-tag">Communication parties prenantes</span>
+                            <span class="skill-tag">Recrutement</span>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- EXPÉRIENCES -->
+            <section id="experiences">
+                <div class="inner">
+                    <p class="section-label">Expériences</p>
+                    <h2 class="section-title">Parcours professionnel</h2>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="tl-date">Août 2024 – Présent</div>
+                            <div class="tl-role">Testeuse QA</div>
+                            <div class="tl-org">Koree Africa — Douala</div>
+                            <ul class="tl-desc">
+                                <li>Test de l'IHM des applications de l'entreprise</li>
+                                <li>Conception de plans de test &amp; exécution manuelle</li>
+                                <li>Rédaction de rapports de bugs et estimation des efforts</li>
+                                <li>Assistante Community Manager (Facebook, Instagram, TikTok, WhatsApp)</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-date">Oct 2023 – Mai 2024</div>
+                            <div class="tl-role">Chef d'équipe Développement Logiciel &amp; Fullstack Developer</div>
+                            <div class="tl-org">Jeegital Media Online</div>
+                            <ul class="tl-desc">
+                                <li>Management d'une équipe de 4 développeurs</li>
+                                <li>Conception de la stratégie technique des projets</li>
+                                <li>Développement fullstack (front-end + back-end) des applications clients</li>
+                                <li>Rédaction des cahiers des charges &amp; benchmark des sites web</li>
+                                <li>Support client, recrutement et gestion du contenu éditorial</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-date">Mars 2023 – Juil 2023</div>
+                            <div class="tl-role">Chargée de Travaux Dirigés &amp; Pratiques</div>
+                            <div class="tl-org">Université de Dschang</div>
+                            <ul class="tl-desc">
+                                <li>Rédaction des fiches de TD/TP et animation des séances</li>
+                                <li>Correction des travaux et surveillance des examens</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-date">Oct 2021 – Jan 2023</div>
+                            <div class="tl-role">Stagiaire Développement Web Fullstack &amp; Testeuse QA</div>
+                            <div class="tl-org">Université de Dschang</div>
+                            <ul class="tl-desc">
+                                <li>Développement d'applications web/mobile (front-end &amp; back-end)</li>
+                                <li>Tests unitaires et fonctionnels, rapports de bugs</li>
+                                <li>Tests manuels et automatisés, estimation des efforts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FORMATION -->
+            <section id="formation">
+                <div class="inner">
+                    <p class="section-label">Formation</p>
+                    <h2 class="section-title">Parcours académique</h2>
+                    <div class="edu-cards">
+                        <div class="edu-card">
+                            <div class="edu-degree">Master en Réseaux &amp; Services Distribués</div>
+                            <div class="edu-school">Université de Dschang</div>
+                            <div class="edu-date">Septembre 2021 – Septembre 2022</div>
+                            <div class="edu-note">
+                                Mémoire :
+                                <em>«Une approche orientée attributs pour le contrôle d'accès basé sur la hiérarchie organisationnelle»</em>
+                                . Cours : Systèmes distribués, Cloud Computing, Virtualisation, Sécurité des réseaux.
+                            </div>
+                            <span class="mention">Mention : Bien</span>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-degree">Licence en Informatique</div>
+                            <div class="edu-school">Université de Dschang</div>
+                            <div class="edu-date">Septembre 2019 – Septembre 2020</div>
+                            <div class="edu-note">
+                                Projet de fin d'études :
+                                <em>«Conception et développement d'une application de gestion de stock du matériel du département informatique»</em>
+                                . Cours : POO, Algorithmique, Base de données, Cybersécurité.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJETS -->
+            <section id="projets">
+                <div class="inner">
+                    <p class="section-label">Projets</p>
+                    <h2 class="section-title">Réalisations notables</h2>
+                    <div class="projects-grid">
+                        <div class="proj-card">
+                            <div class="proj-icon">🔐</div>
+                            <div class="proj-title">Contrôle d'accès ABAC-Hiérarchique</div>
+                            <div class="proj-desc">Proposition d'un modèle ABAC étendu au XACML pour des politiques de sécurité basées sur les attributs et la hiérarchie organisationnelle. Projet de recherche de Master.</div>
+                            <div class="proj-tags">
+                                <span class="proj-tag">XACML</span>
+                                <span class="proj-tag">Sécurité</span>
+                                <span class="proj-tag">Recherche</span>
+                            </div>
+                        </div>
+                        <div class="proj-card">
+                            <div class="proj-icon">📦</div>
+                            <div class="proj-title">Gestion de stock universitaire</div>
+                            <div class="proj-desc">Application complète de gestion du matériel informatique d'un département universitaire, développée en projet de fin de licence.</div>
+                            <div class="proj-tags">
+                                <span class="proj-tag">Java</span>
+                                <span class="proj-tag">MySQL</span>
+                                <span class="proj-tag">POO</span>
+                            </div>
+                        </div>
+                        <div class="proj-card">
+                            <div class="proj-icon">🛒</div>
+                            <div class="proj-title">Application de vente en ligne</div>
+                            <div class="proj-desc">Interface e-commerce développée et déployée via GitLab CI/CD, incluant une page de login, un catalogue produits et un portfolio.</div>
+                            <div class="proj-tags">
+                                <span class="proj-tag">HTML/CSS/JS</span>
+                                <span class="proj-tag">GitLab CI</span>
+                            </div>
+                        </div>
+                        <div class="proj-card">
+                            <div class="proj-icon">📝</div>
+                            <div class="proj-title">Blog Jekyll</div>
+                            <div class="proj-desc">Blog personnel statique généré avec Jekyll, publié via GitLab Pages avec un pipeline automatisé.</div>
+                            <div class="proj-tags">
+                                <span class="proj-tag">Jekyll</span>
+                                <span class="proj-tag">CI/CD</span>
+                                <span class="proj-tag">GitLab</span>
+                            </div>
+                        </div>
+                        <div class="proj-card">
+                            <div class="proj-icon">📡</div>
+                            <div class="proj-title">La Couche Physique et ses Protocoles</div>
+                            <div class="proj-desc">Publication académique sur Scribd couvrant les protocoles de la couche physique des réseaux.</div>
+                            <div class="proj-tags">
+                                <span class="proj-tag">Publication</span>
+                                <span class="proj-tag">Réseaux</span>
+                                <span class="proj-tag">Scribd</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact">
+                <div class="inner">
+                    <p class="section-label">Contact</p>
+                    <h2 class="section-title">Travaillons ensemble</h2>
+                    <div class="contact-grid">
+                        <div>
+                            <p>Je suis ouverte aux opportunités de recherche (bourse PhD), aux missions en QA ou développement, et à tout projet stimulant dans la sécurité des systèmes distribués.</p>
+                            <div class="contact-links">
+                                <a href="tel:+237681055259" class="contact-link">
+                                    <div class="contact-icon">📞</div>
+                                    +237 681 055 259
+                                </a>
+                                <a href="mailto:dongmosopjiof@gmail.com" class="contact-link">
+                                    <div class="contact-icon">✉️</div>
+                                    dongmosopjiof@gmail.com
+                                </a>
+                                <a href="https://www.linkedin.com/in/flore-dongmo-sopjiob24067205/" target="_blank" class="contact-link">
+                                    <div class="contact-icon">💼</div>
+                                    LinkedIn — Flore Dongmo Sopjio
+                                </a>
+                                <a href="#" class="contact-link">
+                                    <div class="contact-icon">📍</div>
+                                    Bonaberi, Douala — Cameroun
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="contact-form">
+                                <input type="text" placeholder="Votre nom">
+                                <input type="email" placeholder="Votre e-mail">
+                                <input type="text" placeholder="Sujet">
+                                <textarea></textarea>
+                                <button class="btn btn-primary" style="width:fit-content">Envoyer le message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <p>©2025 Dongmo Sopjio Flore · Conçu avec passion · Douala, Cameroun</p>
+            </footer>
         </main>
     </body>
 </html>
